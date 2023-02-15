@@ -1,0 +1,67 @@
+[home]
+other = "Inicio"
+
+[backToHome]
+other = "Voltar para a página inicial"
+
+[flip]
+other = "Quem somos"
+
+[archives]
+other = "Arquivos"
+
+[allTags]
+other = "Tags"
+
+[tag]
+one = "1 tag"
+other = "{{ .Count }} tags"
+
+[allCategories]
+other = "Categorias"
+
+[category]
+one = "1 categoria"
+other = "{{ .Count }} categorias"
+
+[article]
+one = "1 artigo"
+other = "{{ .Count }} artigos"
+
+[group]
+one = "1 grupo"
+other = "{{ .Count }} grupos"
+
+[socialLinks]
+other = "Redes sociais"
+
+[minuteRead]
+one = " minuto de leitura"
+other = " minutos de leitura"
+
+[updateAt]
+other = "Atualizado"
+
+[noTag]
+other = "Sem tags"
+
+[prevPage]
+other = "Página anterior"
+
+[nextPage]
+other = "Próxima página"
+
+[saveAsImage]
+other = "Salvar como imagem"
+
+[search]
+other = "Procurar"
+
+[rss]
+other = "Inscreva-se!"
+
+[switchTheme]
+other = "Tema"
+
+[pageNotFound]
+other = "Erro - página não encontrada"

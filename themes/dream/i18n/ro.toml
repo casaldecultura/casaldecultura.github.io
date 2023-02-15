@@ -1,0 +1,67 @@
+[home]
+other = "Start"
+
+[backToHome]
+other = "Înapoi la pagina de start"
+
+[flip]
+other = "Despre noi"
+
+[archives]
+other = "Arhive"
+
+[allTags]
+other = "Etichetele"
+
+[tag]
+one = "1 etichetă"
+other = "{{ .Count }} etichete"
+
+[allCategories]
+other = "Categoriile"
+
+[category]
+one = "1 categorie"
+other = "{{ .Count }} categorii"
+
+[article]
+one = "1 articol"
+other = "{{ .Count }} articole"
+
+[group]
+one = "1 grup"
+other = "{{ .Count }} grupuri"
+
+[socialLinks]
+other = "Link-uri de social media"
+
+[minuteRead]
+one = " minut de citit"
+other = " minute de citire"
+
+[updateAt]
+other = "Actualizat la"
+
+[noTag]
+other = "Fără etichete"
+
+[prevPage]
+other = "Pagina precedentă"
+
+[nextPage]
+other = "Pagina următoare"
+
+[saveAsImage]
+other = "Salvați ca imagine"
+
+[search]
+other = "Căutare"
+
+[rss]
+other = "Abonați-vă!"
+
+[switchTheme]
+other = "Temă"
+
+[pageNotFound]
+other = "Eroare - pagina nu a fost găsită"

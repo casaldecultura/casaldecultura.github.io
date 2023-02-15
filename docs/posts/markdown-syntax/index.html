@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Markdown Syntax Guide | Hugo Theme Dream</title>
+
+    
+<link href="/favicons/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+
+
+<meta http-equiv="Permissions-Policy" content="interest-cohort=()" />
+
+
+
+
+
+<link rel="manifest" href="/manifest.json">
+<link rel="serviceworker" href="/sw.html">
+
+
+
+<meta name="author" content="Hugo Authors" />
+<meta name="description" content="This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.
+" />
+
+
+
+<meta name="generator" content="Hugo 0.109.0">
+
+<link rel="canonical" href="https://example.com/posts/markdown-syntax/" />
+
+
+<meta property="og:title" content="Markdown Syntax Guide" />
+<meta property="og:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://example.com/posts/markdown-syntax/" /><meta property="og:image" content="https://example.com/img/default2.jpg" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2019-03-11T00:00:00+00:00" />
+<meta property="article:modified_time" content="2019-03-11T00:00:00+00:00" />
+
+
+
+<meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://example.com/img/default2.jpg"/>
+
+<meta name="twitter:title" content="Markdown Syntax Guide"/>
+<meta name="twitter:description" content="Sample article showcasing basic Markdown syntax and formatting for HTML elements."/>
+
+
+
+
+
+<link rel="stylesheet" href="/css/3p/semantic.min@2.4.2.css" />
+
+<link rel="stylesheet" href="/css/icomoon.css" />
+
+  <link rel="stylesheet" href="/css/3p/OverlayScrollbars.min@1.13.0.css" />
+  
+
+<link rel="stylesheet" href="/css/3p/github-markdown.min@4.0.0.css" />
+
+<link rel="stylesheet" href="/css/site.css" />
+
+<style>
+  .ui.header a:not(.item, .ui.button):hover {
+    text-decoration: underline;
+  }
+
+  
+  a:not(.item, .ui.button) {
+    color: seagreen !important;
+  }
+  
+
+  
+
+  
+  body.default {
+    
+    background-color: #f7f7f7;
+    
+
+    
+  }
+  
+
+  
+</style>
+
+
+    
+
+
+
+
+
+
+
+    
+    <link rel="stylesheet" href="/css/custom.css" />
+    
+    
+    <style>
+      .markdown-body img {
+      background-color: initial !important;
+    }
+    </style>
+  </head>
+
+  <body class="default">
+    
+<nav class="ui secondary menu dream-menu dream-nav">
+
+  
+  <a class="item dream-flip-toggle" title="About" alt="About">
+    <i class="large link question circle icon"></i>
+    
+  </a>
+  
+  <a class="item" href="https://example.com" title="Home" alt="Home">
+    <i class="large link home icon"></i>
+      
+  </a>
+  
+  
+  
+  
+  
+</nav>
+
+    <div class="flip-container">
+      <div class="flipper">
+        <section class="front">
+          <div class="dream-max-width">
+            
+<div class="ui relaxed centered grid dream-grid dream-grid-single">
+  
+  
+  
+  
+
+  
+  <aside class="sixteen wide mobile sixteen wide tablet three wide computer column dream-single-aside">
+    
+    <div class="ui segment toc">
+      <nav id="TableOfContents">
+  <ul>
+    <li><a href="#headings">Headings</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#h2">H2</a>
+      <ul>
+        <li><a href="#h3">H3</a></li>
+      </ul>
+    </li>
+    <li><a href="#paragraph">Paragraph</a></li>
+    <li><a href="#blockquotes">Blockquotes</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#tables">Tables</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#code-blocks">Code Blocks</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#list-types">List Types</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</a></li>
+  </ul>
+</nav>
+    </div>
+    
+
+    
+  </aside>
+  
+  <div class="sixteen wide mobile sixteen wide tablet ten wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    <section class="ui segment">
+      <header>
+        <h1 class="ui large header">Markdown Syntax Guide<span class="sub header">
+            <span class="left">@
+              
+              
+                
+                  Hugo Authors
+                
+              
+
+              | 
+  
+    Monday, 11 Mar, 2019
+  
+
+
+
+              | 3 minutes read
+
+              
+              | Last updated
+                
+  
+    Monday, 11 Mar, 2019
+  
+
+
+              
+		
+            
+			
+               <p>
+		     	  
+		     		<i class="th list icon" title="Categories" alt="Categories"></i>
+		     			<a href="/categories/">[themes syntax]</a>
+		     			&nbsp;
+		     	  
+		
+                
+	<span class="dream-tags">
+                	<i class="tags icon" title="Tags" alt="Tags"></i>
+                	
+                		<a class="ui label button" href="/tags/markdown">#markdown</a>
+                		&nbsp;
+                	
+                		<a class="ui label button" href="/tags/css">#css</a>
+                		&nbsp;
+                	
+                		<a class="ui label button" href="/tags/html">#html</a>
+                		&nbsp;
+                	
+                		<a class="ui label button" href="/tags/themes">#themes</a>
+                		&nbsp;
+                	
+                		<a class="ui label button" href="/tags/themes-guide">#Themes Guide</a>
+                		&nbsp;
+                	
+	</span>
+                
+				
+              </p>
+						  
+			  
+            </span>
+
+            
+            <span class="dream-share">
+  <a href="#" class="save-as-image" title="Save as image" onclick="savePostAsImg()">
+    <i class="save icon" alt="Save as image"></i>
+  </a>
+  <a href="https://twitter.com/intent/tweet?text=Markdown%20Syntax%20Guide&url=https%3a%2f%2fexample.com%2fposts%2fmarkdown-syntax%2f" title="Twitter">
+    <i class="twitter icon" alt="Twitter"></i>
+  </a>
+  <a href="https://facebook.com/sharer/sharer.php?u=https%3a%2f%2fexample.com%2fposts%2fmarkdown-syntax%2f" title="Facebook">
+    <i class="facebook icon" alt="Facebook"></i>
+  </a>
+  <a href="https://t.me/share/url?url=https%3a%2f%2fexample.com%2fposts%2fmarkdown-syntax%2f&text=Markdown%20Syntax%20Guide" title="Telegram">
+    <i class="telegram icon" alt="Telegram"></i>
+  </a>
+</span>
+
+            
+          </span>
+        </h1>
+      </header>
+
+      <article class="main">
+        
+
+        <p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.</p>
+<h2 id="headings">Headings</h2>
+<p>The following HTML <code>&lt;h1&gt;</code>—<code>&lt;h6&gt;</code> elements represent six levels of section headings. <code>&lt;h1&gt;</code> is the highest section level while <code>&lt;h6&gt;</code> is the lowest.</p>
+<h1 id="h1">H1</h1>
+<h2 id="h2">H2</h2>
+<h3 id="h3">H3</h3>
+<h4 id="h4">H4</h4>
+<h5 id="h5">H5</h5>
+<h6 id="h6">H6</h6>
+<h2 id="paragraph">Paragraph</h2>
+<p>Xerum, quo qui aut unt expliquam qui dolut labo. Aque venitatiusda cum, voluptionse latur sitiae dolessi aut parist aut dollo enim qui voluptate ma dolestendit peritin re plis aut quas inctum laceat est volestemque commosa as cus endigna tectur, offic to cor sequas etum rerum idem sintibus eiur? Quianimin porecus evelectur, cum que nis nust voloribus ratem aut omnimi, sitatur? Quiatem. Nam, omnis sum am facea corem alique molestrunt et eos evelece arcillit ut aut eos eos nus, sin conecerem erum fuga. Ri oditatquam, ad quibus unda veliamenimin cusam et facea ipsamus es exerum sitate dolores editium rerore eost, temped molorro ratiae volorro te reribus dolorer sperchicium faceata tiustia prat.</p>
+<p>Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sapicia is sinveli squiatum, core et que aut hariosam ex eat.</p>
+<h2 id="blockquotes">Blockquotes</h2>
+<p>The blockquote element represents content that is quoted from another source, optionally with a citation which must be within a <code>footer</code> or <code>cite</code> element, and optionally with in-line changes such as annotations and abbreviations.</p>
+<h4 id="blockquote-without-attribution">Blockquote without attribution</h4>
+<blockquote>
+<p>Tiam, ad mint andaepu dandae nostion secatur sequo quae.
+<strong>Note</strong> that you can use <em>Markdown syntax</em> within a blockquote.</p>
+</blockquote>
+<h4 id="blockquote-with-attribution">Blockquote with attribution</h4>
+<blockquote>
+<p>Don&rsquo;t communicate by sharing memory, share memory by communicating.</p>
+— <cite>Rob Pike<sup id="fnref:1"><a href="#fn:1" class="footnote-ref" role="doc-noteref">1</a></sup></cite></p>
+</blockquote>
+<h2 id="tables">Tables</h2>
+<p>Tables aren&rsquo;t part of the core Markdown spec, but Hugo supports them out-of-the-box.</p>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Age</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bob</td>
+<td>27</td>
+</tr>
+<tr>
+<td>Alice</td>
+<td>23</td>
+</tr>
+</tbody>
+</table>
+<h4 id="inline-markdown-within-tables">Inline Markdown within tables</h4>
+<table>
+<thead>
+<tr>
+<th>Inline   </th>
+<th>Markdown   </th>
+<th>In   </th>
+<th>Table</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><em>italics</em></td>
+<td><strong>bold</strong></td>
+<td><del>strikethrough</del>   </td>
+<td><code>code</code></td>
+</tr>
+</tbody>
+</table>
+<h2 id="code-blocks">Code Blocks</h2>
+<h4 id="code-block-with-backticks">Code block with backticks</h4>
+<pre tabindex="0"><code>html
+&lt;!DOCTYPE html&gt;
+&lt;html lang=&#34;en&#34;&gt;
+&lt;head&gt;
+  &lt;meta charset=&#34;UTF-8&#34;&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre><h4 id="code-block-indented-with-four-spaces">Code block indented with four spaces</h4>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Example HTML5 Document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;Test&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<h4 id="code-block-with-hugos-internal-highlight-shortcode">Code block with Hugo&rsquo;s internal highlight shortcode</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-html" data-lang="html"><span style="display:flex;"><span><span style="color:#75715e">&lt;!DOCTYPE html&gt;</span>
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">html</span> <span style="color:#a6e22e">lang</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;en&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">meta</span> <span style="color:#a6e22e">charset</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;UTF-8&#34;</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">title</span>&gt;Example HTML5 Document&lt;/<span style="color:#f92672">title</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">head</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>  &lt;<span style="color:#f92672">p</span>&gt;Test&lt;/<span style="color:#f92672">p</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">body</span>&gt;
+</span></span><span style="display:flex;"><span>&lt;/<span style="color:#f92672">html</span>&gt;</span></span></code></pre></div>
+<h2 id="list-types">List Types</h2>
+<h4 id="ordered-list">Ordered List</h4>
+<ol>
+<li>First item</li>
+<li>Second item</li>
+<li>Third item</li>
+</ol>
+<h4 id="unordered-list">Unordered List</h4>
+<ul>
+<li>List item</li>
+<li>Another item</li>
+<li>And another item</li>
+</ul>
+<h4 id="nested-list">Nested list</h4>
+<ul>
+<li>Item</li>
+</ul>
+<ol>
+<li>First Sub-item</li>
+<li>Second Sub-item</li>
+</ol>
+<h2 id="other-elements--abbr-sub-sup-kbd-mark">Other Elements — abbr, sub, sup, kbd, mark</h2>
+<p><abbr title="Graphics Interchange Format">GIF</abbr> is a bitmap image format.</p>
+<p>H<sub>2</sub>O</p>
+<p>X<sup>n</sup> + Y<sup>n</sup> = Z<sup>n</sup></p>
+<p>Press <kbd><kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>Delete</kbd></kbd> to end the session.</p>
+<p>Most <mark>salamanders</mark> are nocturnal, and hunt for insects, worms, and other small creatures.</p>
+<div class="footnotes" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn:1">
+<p>The above quote is excerpted from Rob Pike&rsquo;s <a href="https://www.youtube.com/watch?v=PAAkCSZUG1c">talk</a> during Gopherfest, November 18, 2015.&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+</li>
+</ol>
+</div>
+      </article>
+    </section>
+
+    
+
+    
+
+    
+  </div>
+</div>
+
+
+            <footer class="ui basic center aligned segment" style="background-color: transparent;">
+              
+              <p>© 2016 - 2023 Hugo Theme Dream.
+              
+              
+              </p>
+              <p>Powered by <a href="https://gohugo.io/" target="_blank">Hugo</a> with theme <a href="https://github.com/g1eny0ung/hugo-theme-dream" target="_blank">Dream</a>.</p>
+
+              
+            </footer>
+          </div>
+        </section>
+        <section class="back">
+          <div class="dream-max-width">
+            <header class="ui basic very padded segment dream-header">
+  
+	<div class="ui small image">
+			<img src="/img/avatar.jpeg" alt="avatar" />
+		</div>
+	
+  
+
+  <div class="content">
+    <h1 class="ui extra-large header master">Hugo Theme Dream<span class="sub header master">Motto<br>
+		<noscript style="color: red;">Please enable JavaScript for this website to work properly.</noscript>
+      </span>
+    </h1>
+
+
+    <article class="ui horizontal list">
+      
+      <a class="item" href="/posts">
+        <i class="archive icon" title="Archives"></i>
+		
+      </a>
+      
+      <a class="item" href="/categories">
+        <i class="th list icon" title="Categories"></i>
+		
+      </a>
+      <a class="item" href="/tags">
+        <i class="tags icon" title="Tags"></i>
+		
+      </a>
+    </article>
+
+
+    
+    
+    
+    
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+      
+    
+    
+
+    
+
+    
+    
+    
+          <div class="dream-tags">
+          
+          
+          
+            <a class="ui label" href="/tags/css/" title="css">
+              #css
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/emoji/" title="emoji">
+              #emoji
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/html/" title="html">
+              #html
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/markdown/" title="markdown">
+              #markdown
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/privacy/" title="privacy">
+              #privacy
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/shortcodes/" title="shortcodes">
+              #shortcodes
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/text/" title="text">
+              #text
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/themes/" title="themes">
+              #themes
+            </a>
+          
+          
+          
+            <a class="ui label" href="/tags/themes-guide/" title="Themes Guide">
+              #Themes Guide
+            </a>
+          
+          </div>
+    
+
+    
+  </div>
+</header>
+
+
+<div class="ui relaxed grid dream-grid dream-back">
+  
+  
+  
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    <article class="ui segment markdown-body">
+      <div class="ui medium header">About</div>
+      <p>Written in Go, Hugo is an open source static site generator available under the <a href="https://github.com/gohugoio/hugo/blob/master/LICENSE">Apache Licence 2.0.</a> Hugo supports TOML, YAML and JSON data file types, Markdown and HTML content files and uses shortcodes to add rich content. Other notable features are taxonomies, multilingual mode, image processing, custom output formats, HTML/CSS/JS minification and support for Sass SCSS workflows.</p>
+<p>Hugo makes use of a variety of open source projects including:</p>
+<ul>
+<li><a href="https://github.com/yuin/goldmark">https://github.com/yuin/goldmark</a></li>
+<li><a href="https://github.com/alecthomas/chroma">https://github.com/alecthomas/chroma</a></li>
+<li><a href="https://github.com/muesli/smartcrop">https://github.com/muesli/smartcrop</a></li>
+<li><a href="https://github.com/spf13/cobra">https://github.com/spf13/cobra</a></li>
+<li><a href="https://github.com/spf13/viper">https://github.com/spf13/viper</a></li>
+</ul>
+<p>Hugo is ideal for blogs, corporate websites, creative portfolios, online magazines, single page applications or even a website with thousands of pages.</p>
+<p>Hugo is for people who want to hand code their own website without worrying about setting up complicated runtimes, dependencies and databases.</p>
+<p>Websites built with Hugo are extremelly fast, secure and can be deployed anywhere including, AWS, GitHub Pages, Heroku, Netlify and any other hosting provider.</p>
+<p>Learn more and contribute on <a href="https://github.com/gohugoio">GitHub</a>.</p>
+
+    </article>
+  </div>
+  
+
+  
+    <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+      <article class="ui segment">
+        <div class="ui medium header">Social Links</div>
+        <nav class="ui secondary menu dream-menu dream-socials">
+  
+  <a class="item" href="/index.xml">
+    <i class="large rss square icon" title="RSS"></i>
+	 <div> &nbsp;&nbsp;RSS </div> 
+  </a>
+  
+
+  
+  <a class="item" href="mailto:g1enyy0ung@gmail.com" rel="me" >
+    <i class="large mail icon" title="Email"></i>
+	 <div> &nbsp;&nbsp;Email </div> 
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  
+  
+  
+    <a class="item" href="https://twitter.com/joebloggs" rel="me" target="_blank">
+      <i class="large twitter icon" title="Twitter"></i> 
+	  <div> &nbsp;&nbsp;Twitter </div>
+    </a>
+  
+    <a class="item" href="https://facebook.com/joebloggs" rel="me" target="_blank">
+      <i class="large facebook icon" title="Facebook"></i> 
+	  <div> &nbsp;&nbsp;Facebook </div>
+    </a>
+  
+    <a class="item" href="https://messenger.com/joebloggs" rel="me" target="_blank">
+      <i class="large comment icon" title="Facebook Messenger"></i> 
+	  <div> &nbsp;&nbsp;Facebook Messenger </div>
+    </a>
+  
+    <a class="item" href="https://vk.com/joebloggs" rel="me" target="_blank">
+      <i class="large vk icon" title="VKontakte"></i> 
+	  <div> &nbsp;&nbsp;VKontakte </div>
+    </a>
+  
+    <a class="item" href="https://mastodon.social/@JoeBloggs" rel="me" target="_blank">
+      <i class="large icon-mastodon icon" title="Mastodon"></i> 
+	  <div> &nbsp;&nbsp;Mastodon </div>
+    </a>
+  
+    <a class="item" href="https://old.reddit.com/r/joebloggssubreddit/" rel="me" target="_blank">
+      <i class="large android icon" title="SubReddit"></i> 
+	  <div> &nbsp;&nbsp;SubReddit </div>
+    </a>
+  
+    <a class="item" href="https://www.reddit.com/u/joebloggs/" rel="me" target="_blank">
+      <i class="large android icon" title="Reddit User Account"></i> 
+	  <div> &nbsp;&nbsp;Reddit User Account </div>
+    </a>
+  
+    <a class="item" href="https://www.youtube.com/channel/UCuAXFkgsw1L7xaCfnd5JJOw" rel="me" target="_blank">
+      <i class="large youtube icon" title="YouTube"></i> 
+	  <div> &nbsp;&nbsp;YouTube </div>
+    </a>
+  
+    <a class="item" href="https://www.twitch.tv/moistcr1tikal" rel="me" target="_blank">
+      <i class="large twitch icon" title="Twitch.tv"></i> 
+	  <div> &nbsp;&nbsp;Twitch.tv </div>
+    </a>
+  
+    <a class="item" href="https://vimeo.com/user12345678" rel="me" target="_blank">
+      <i class="large vimeo icon" title="Vimeo"></i> 
+	  <div> &nbsp;&nbsp;Vimeo </div>
+    </a>
+  
+    <a class="item" href="https://instagram.com/joebloggs" rel="me" target="_blank">
+      <i class="large instagram icon" title="Instagram"></i> 
+	  <div> &nbsp;&nbsp;Instagram </div>
+    </a>
+  
+    <a class="item" href="https://www.linkedin.com/in/joebloggs" rel="me" target="">
+      <i class="large linkedin icon" title="Linkedin"></i> 
+	  <div> &nbsp;&nbsp;Linkedin </div>
+    </a>
+  
+    <a class="item" href="https://github.com/joebloggs" rel="me" target="_blank">
+      <i class="large github icon" title="GitHub"></i> 
+	  <div> &nbsp;&nbsp;GitHub </div>
+    </a>
+  
+    <a class="item" href="https://gitlab.com/joebloggs" rel="me" target="_blank">
+      <i class="large gitlab icon" title="GitLab"></i> 
+	  <div> &nbsp;&nbsp;GitLab </div>
+    </a>
+  
+    <a class="item" href="https://drive.google.com/drive/folders/blablabla?usp=sharing" rel="me" target="_blank">
+      <i class="large download icon" title="Google Drive/Cloud"></i> 
+	  <div> &nbsp;&nbsp;Google Drive/Cloud </div>
+    </a>
+  
+    <a class="item" href="https://stackoverflow.com/users/1234567/joebloggs" rel="me" target="_blank">
+      <i class="large stack overflow icon" title="Stack Overflow"></i> 
+	  <div> &nbsp;&nbsp;Stack Overflow </div>
+    </a>
+  
+    <a class="item" href="https://t.me/joebloggs" rel="me" target="_blank">
+      <i class="large telegram icon" title="Telegram"></i> 
+	  <div> &nbsp;&nbsp;Telegram </div>
+    </a>
+  
+    <a class="item" href="https://wa.me/15551234567?text=I%27m%20interested%20in%20your%20car%20for%20sale" rel="me" target="_blank">
+      <i class="large whatsapp icon" title="Whatsapp"></i> 
+	  <div> &nbsp;&nbsp;Whatsapp </div>
+    </a>
+  
+    <a class="item" href="https://www.google.com" rel="me" target="_blank">
+      <i class="large chain icon" title="Other website"></i> 
+	  <div> &nbsp;&nbsp;Other website </div>
+    </a>
+  
+    <a class="item" href="https://www.patreon.com/joebloggs" rel="me" target="_blank">
+      <i class="large patreon icon" title="Patreon"></i> 
+	  <div> &nbsp;&nbsp;Patreon </div>
+    </a>
+  
+    <a class="item" href="https://www.paypal.com/paypalme/JoeBloggs" rel="me" target="_blank">
+      <i class="large paypal icon" title="PayPal"></i> 
+	  <div> &nbsp;&nbsp;PayPal </div>
+    </a>
+  
+    <a class="item" href="https://www.etsy.com/uk/shop/JoeBloggs" rel="me" target="_blank">
+      <i class="large etsy icon" title="Etsy"></i> 
+	  <div> &nbsp;&nbsp;Etsy </div>
+    </a>
+  
+    <a class="item" href="https://www.ebay.co.uk/usr/joebloggs" rel="me" target="_blank">
+      <i class="large cart icon" title="eBay"></i> 
+	  <div> &nbsp;&nbsp;eBay </div>
+    </a>
+  
+    <a class="item" href="https://soundcloud.com/user-12345678" rel="me" target="_blank">
+      <i class="large soundcloud icon" title="SoundCloud"></i> 
+	  <div> &nbsp;&nbsp;SoundCloud </div>
+    </a>
+  
+    <a class="item" href="https://hearthis.at/joe-bloggs/" rel="me" target="_blank">
+      <i class="large microphone icon" title="HeartThis.at"></i> 
+	  <div> &nbsp;&nbsp;HeartThis.at </div>
+    </a>
+  
+    <a class="item" href="https://www.last.fm/user/JoeBloggs" rel="me" target="_blank">
+      <i class="large lastfm icon" title="Last.fm"></i> 
+	  <div> &nbsp;&nbsp;Last.fm </div>
+    </a>
+  
+    <a class="item" href="https://open.spotify.com/artist/0gxyHStUsqpMadRV0Di1Qt" rel="me" target="_blank">
+      <i class="large spotify icon" title="Spotify"></i> 
+	  <div> &nbsp;&nbsp;Spotify </div>
+    </a>
+  
+    <a class="item" href="https://www.deezer.com/en/artist/12345678" rel="me" target="_blank">
+      <i class="large music icon" title="Deezer"></i> 
+	  <div> &nbsp;&nbsp;Deezer </div>
+    </a>
+  
+    <a class="item" href="https://matrix.to/#/@joebloggs:matrix.org" rel="me" target="_blank">
+      <i class="large at icon" title="Matrix"></i> 
+	  <div> &nbsp;&nbsp;Matrix </div>
+    </a>
+  
+    <a class="item" href="https://discord.gg/HP5sQ6c" rel="me" target="_blank">
+      <i class="large discord icon" title="Discord Server"></i> 
+	  <div> &nbsp;&nbsp;Discord Server </div>
+    </a>
+  
+    <a class="item" href="skype:joebloggs420" rel="me" target="_blank">
+      <i class="large skype icon" title="Skype"></i> 
+	  <div> &nbsp;&nbsp;Skype </div>
+    </a>
+  
+    <a class="item" href="mailto:joebloggs@email.com" rel="me" target="_blank">
+      <i class="large envelope icon" title="Email"></i> 
+	  <div> &nbsp;&nbsp;Email </div>
+    </a>
+  
+    <a class="item" href="mailto:joebloggs@email.com" rel="me" target="_blank">
+      <i class="large envelope icon" title="joebloggs@email.com"></i> 
+	  <div> &nbsp;&nbsp;joebloggs@email.com </div>
+    </a>
+  
+    <a class="item" href="https://codepen.io/joebloggs" rel="me" target="_blank">
+      <i class="large codepen icon" title="Codepen"></i> 
+	  <div> &nbsp;&nbsp;Codepen </div>
+    </a>
+  
+    <a class="item" href="tox:56A1ADE4B65B86BCD51CC73E2CD4E542179F47959FE3E0E21B4B0ACDADE51855D34D34D37CB5" rel="me" target="_blank">
+      <i class="large lock icon" title="qTox"></i> 
+	  <div> &nbsp;&nbsp;qTox </div>
+    </a>
+  
+    <a class="item" href="tel:1-408-555-5555" rel="me" target="_blank">
+      <i class="large phone icon" title="Telephone"></i> 
+	  <div> &nbsp;&nbsp;Telephone </div>
+    </a>
+  
+    <a class="item" href="bitcoin:%3caddress%3e[?amount=%3camount%3e][?label=%3clabel%3e][?message=%3cmessage%3e]" rel="me" target="_blank">
+      <i class="large bitcoin icon" title="Cryptocurrency"></i> 
+	  <div> &nbsp;&nbsp;Cryptocurrency </div>
+    </a>
+  
+  
+  
+</nav>
+
+      </article>
+    </div>
+  
+
+  <div class="sixteen wide mobile eight wide tablet four wide computer column dream-column">
+    
+  </div>
+
+  
+</div>
+
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="/js/3p/jquery.min@3.6.0.js"></script>
+    
+    <script src="/js/3p/semantic.min@2.4.2.js"></script>
+    
+
+    
+
+    
+
+    <script>
+  window.background = "#f7f7f7"
+  window.defaultDark =  null 
+  window.backgroundDark =  null 
+  window.backgroundImageDark =  null 
+  window.darkNav =  null 
+  window.maxTags =  null 
+  window.hasTwitterEmbed =  null 
+  window.fixedNav =  null 
+
+  if (window.hasTwitterEmbed) {
+    
+    window.twttr = (function (d, s, id) {
+      var js,
+        fjs = d.getElementsByTagName(s)[0],
+        t = window.twttr || {}
+      if (d.getElementById(id)) return t
+      js = d.createElement(s)
+      js.id = id
+      js.src = 'https://platform.twitter.com/widgets.js'
+      fjs.parentNode.insertBefore(js, fjs)
+
+      t._e = []
+      t.ready = function (f) {
+        t._e.push(f)
+      }
+
+      return t
+    })(document, 'script', 'twitter-wjs')
+  }
+</script>
+
+  <script src="/js/3p/jquery.overlayScrollbars.min@1.13.1.js"></script>
+    <script src="/js/main.js"></script>
+  
+<script src="/js/header.js"></script>
+<script src="/js/theme.js"></script>
+
+    
+
+
+
+<script src="/js/scrollToTop.js"></script>
+
+
+
+<script src="/js/3p/html2canvas.min@1.0.0-rc.1.js"></script>
+
+  <script src="/js/post.js" defer></script>
+
+
+    
+
+    
+  </body>
+</html>

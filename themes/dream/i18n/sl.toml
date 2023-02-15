@@ -1,0 +1,67 @@
+[home]
+other = "Domača stran"
+
+[backToHome]
+other = "Vrnite se na domačo stran"
+
+[flip]
+other = "O nas"
+
+[archives]
+other = "Arhiv"
+
+[allTags]
+other = "Oznake"
+
+[tag]
+one = "1 oznaka"
+other = "{{ .Count }} oznaki"
+
+[allCategories]
+other = "Kategorije"
+
+[category]
+one = "1 kategorija"
+other = "{{ .Count }} kategoriji"
+
+[article]
+one = "1 članek"
+other = "{{ .Count }} članka"
+
+[group]
+one = "1 skupina"
+other = "{{ .Count }} skupine"
+
+[socialLinks]
+other = "Povezave do družabnih medijev"
+
+[minuteRead]
+one = " minuta za branje"
+other = " minuti za branje"
+
+[updateAt]
+other = "Posodobljeno ob"
+
+[noTag]
+other = "Brez oznak "
+
+[prevPage]
+other = "Prejšnja stran"
+
+[nextPage]
+other = "Naslednja stran"
+
+[saveAsImage]
+other = "Shrani kot sliko"
+
+[search]
+other = "Iskanje"
+
+[rss]
+other = "Naročite se!"
+
+[switchTheme]
+other = "Temo"
+
+[pageNotFound]
+other = "Napaka - stran ni bila najdena"

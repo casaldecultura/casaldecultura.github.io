@@ -1,0 +1,46 @@
+{{ define "title" }}
+{{- if or (eq .Data.Singular "tag") (eq .Data.Singular "category") -}}
+{{ .Data.Term }}
+{{- end -}}
+{{ end }}
+
+{{ define "main"}}
+
+{{ partial "header.html" . }}
+
+<div class="ui relaxed grid dream-grid">
+  {{ $paginator := .Paginate .Pages }}
+  {{ range $paginator.Pages }}
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    {{ .Render "summary" }}
+  </div>
+  {{ end }}
+
+  {{ if or $paginator.HasPrev $paginator.HasNext  }}
+  <div class="sixteen wide mobile eight wide tablet eight wide computer four wide large screen four wide widescreen column dream-column">
+    {{ partial "paginator.html" (dict "paginator" $paginator) }}
+  </div>
+  {{ end }}
+</div>
+{{ end }}
+
+{{ define "js" }}
+
+{{ if .Site.Params.Experimental.jsDate }}
+{{ partial "luxon.html" . }}
+{{ end }}
+
+{{ if .Site.Params.CDNJS }}
+  <script src="https://cdn.jsdelivr.net/npm/imagesloaded@4.1.4/imagesloaded.pkgd.min.js" integrity="sha256-lqvxZrPLtfffUl2G/e7szqSvPBILGbwmsGE1MKlOi0Q=" crossorigin="anonymous"></script>
+{{- else -}}
+  <script src="{{ "/js/3p/imagesloaded.pkgd.min@4.1.4.js" | relURL }}"></script>
+{{ end }}
+
+{{ if .Site.Params.CDNJS }}
+  <script src="https://cdn.jsdelivr.net/npm/masonry-layout@4.2.2/dist/masonry.pkgd.min.js" integrity="sha256-Nn1q/fx0H7SNLZMQ5Hw5JLaTRZp0yILA/FRexe19VdI=" crossorigin="anonymous"></script>
+{{- else -}}
+  <script src="{{ "/js/3p/masonry.pkgd.min@4.2.2.js" | relURL }}"></script>
+{{ end }}
+
+<script src="{{ "/js/grid.js" | relURL }}"></script>
+{{ end }}

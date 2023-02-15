@@ -1,0 +1,200 @@
+{{ define "title" }}{{ .Title }}{{ end }}
+
+{{ define "css" }}
+
+{{ if .Site.Params.highlightjs }}
+{{ if .Site.Params.highlightjsTheme }}
+  {{ if .Site.Params.CDNJS }}
+    <link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/{{ .Site.Params.highlightjsTheme }}.min.css" />
+  {{- else -}}
+    <link rel="stylesheet" data-highlight href="{{ "/css/3p/hljs/{{ .Site.Params.highlightjsTheme }}.min.css" | relURL }}" />
+  {{ end }}
+{{ else }}
+  {{ if .Site.Params.CDNJS }}
+    <link rel="stylesheet" data-highlight href="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/styles/default.min.css" integrity="sha256-+94KwJIdhsNWxBUy5zGciHojvRuP8ABgyrRHJJ8Dx88=" crossorigin="anonymous"/>
+  {{- else -}}
+    <link rel="stylesheet" data-highlight href="{{ "/css/3p/hljs/default.min.css" | relURL }}" />
+  {{ end }}
+{{ end }}
+{{ end }}
+
+{{ if .Site.Params.valine }}
+  {{ if .Site.Params.CDNJS }}
+    <script src='https://unpkg.com/valine/dist/Valine.min.js' integrity="sha256-nPUdUfwNm4YBBhEYBxrSbW5DmfVODKCzs0nAp1Z3RnM=" crossorigin="anonymous"></script>
+  {{- else -}}
+    <script src="{{ "/js/3p/Valine.min@1.4.16.js" | relURL }}"></script>
+  {{ end }}
+{{ end }}
+
+{{ end }}
+
+{{ define "main" }}
+<div class="ui relaxed centered grid dream-grid dream-grid-single"{{ if .Site.Params.reversePostAndAside }}style="flex-direction: row-reverse;"{{ end }}>
+  <!-- len <nav id="TableOfContents"></nav> == 32 -->
+  {{ $showTOC := ge (len .TableOfContents) 33 }}
+  {{ $shareInAside := .Site.Params.shareInAside }}
+  {{ $showAside := or $showTOC $shareInAside }}
+
+  {{ if $showAside }}
+  <aside class="sixteen wide mobile sixteen wide tablet three wide computer column dream-single-aside">
+    {{ if $showTOC }}
+    <div class="ui segment toc">
+      {{ .TableOfContents }}
+    </div>
+    {{ end }}
+
+    {{ if $shareInAside }}
+    {{ partial "share1.html" . }}
+    {{ end }}
+  </aside>
+  {{ end }}
+  <div class="sixteen wide mobile sixteen wide tablet ten wide computer column markdown-body dream-single" id="dream-save-post-as-img">
+    <section class="ui segment">
+      <header>
+        <h1 class="ui large header">
+          {{- .Title -}}
+          <span class="sub header">
+            <span class="left">
+              {{- if isset .Params "avatar" -}}
+                <img class="ui avatar image" src="{{ .Params.avatar }}" alt="avatar" />
+              {{- else -}}
+              @
+              {{ end }}
+              {{ if isset .Params "author" }}
+                {{ if isset .Params "authorlink" }}
+                  <a href="{{ .Params.authorlink }}" target="_blank">{{ .Params.author }}</a>
+                {{ else }}
+                  {{ .Params.author }}
+                {{ end }}
+              {{ else }}
+                {{ .Site.Params.author }}
+              {{ end }}
+<!-- add i18n.html for day/date as partial; not 100% sure it works. https://discourse.gohugo.io/t/using-a-short-code-for-repeated-html-code/7307/4 -->
+              | {{ partial "i18n.html" . }}
+
+              | {{ .ReadingTime }}{{ i18n "minuteRead" .ReadingTime }}
+
+              {{ if ne .Params.nolastmod true }}
+              | {{ i18n "updateAt" }}
+                {{ partial "i18n2.html" . }}
+              {{ end }}
+<!-- Hugo IF NOT is weird https://discourse.gohugo.io/t/reverse-if-conditional/3748, https://discourse.gohugo.io/t/check-for-not-isset/16812, https://gohugo.io/functions/with#readout -->		
+            {{ with .Site.Params.hideArticleTags }}			
+<!-- if true, display nothing -->
+            {{ else }}
+<!-- if false [DOES NOT WORK]/not present [WORKS], display default -->			
+               <p>
+		     	  {{ if isset .Params "categories" }}
+		     		<i class="th list icon" title="{{ T "allCategories" }}" alt="{{ T "allCategories" }}"></i>
+		     			<a href="{{ "/categories/" | relLangURL }}{{ .Params.categories | urlize }}">{{ .Params.categories }}</a>
+		     			&nbsp;
+		     	  {{ else }}
+		     	  {{ end }}
+		
+                {{ if isset .Params "tags" }}
+	<span class="dream-tags">
+                	<i class="tags icon" title="{{ T "allTags" }}" alt="{{ T "allTags" }}"></i>
+                	{{ range .Params.tags }}
+                		<a class="ui label button" href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">#{{ . }}</a>
+                		&nbsp;
+                	{{ end }}
+	</span>
+                {{ else }}
+                {{ end }}
+				
+              </p>
+			{{ end }}			  
+			  
+            </span>
+
+            {{ if not $shareInAside }}
+            {{ partial "share.html" . }}
+            {{ end }}
+          </span>
+        </h1>
+      </header>
+
+      <article class="main">
+        {{ if and .Params.Cover .Site.Params.showSummaryCoverInPost }}
+        <img class="cover" src="{{ .Params.Cover }}" />
+        {{ end }}
+
+        {{ .Content | emojify }}
+      </article>
+    </section>
+
+    {{ if .Site.DisqusShortname }}
+    <article class="ui segment post-disqus-area" data-html2canvas-ignore>
+      {{ partial "disqus.html" (dict "Context" . "Identifier" .RelPermalink) }}
+    </article>
+    {{ end }}
+
+    {{ if .Site.Params.utterancesRepo }}
+	<!-- https://utteranc.es/, SaaS Github Issues are used as comments; not worth archiving JS -->
+    <article class="ui segment utterances-comments" data-html2canvas-ignore>
+      <script
+        src="https://utteranc.es/client.js"
+        repo="{{ .Site.Params.utterancesRepo }}"
+        issue-term="og:title"
+        theme="github-light"
+        integrity="sha256-824DMomOHyPwhftdoGk58msv1X6ZwwbpwfStOxfvzzQ="
+        crossorigin="anonymous"
+        async>
+      </script>
+    </article>
+    {{ end }}
+
+    {{ if .Site.Params.valine }}
+    <article class="ui segment" data-html2canvas-ignore>
+      <div id="vcomments"></div>
+    </article>
+
+    <script>
+      new Valine({
+        el: '#vcomments',
+        appId: '{{ .Site.Params.LEANCLOUD_APP_ID }}',
+        appKey: '{{ .Site.Params.LEANCLOUD_APP_KEY }}',
+        lang: '{{ .Site.Params.VALINE_LANGUAGE }}'
+      })
+    </script>
+    {{ end }}
+  </div>
+</div>
+{{ end }}
+
+{{ define "js" }}
+
+{{ if .Site.Params.Experimental.jsDate }}
+{{ partial "luxon.html" . }}
+{{ end }}
+
+<script src="{{ "/js/scrollToTop.js" | relURL }}"></script>
+
+{{ if .Site.Params.highlightjs }}
+<script src="{{ if .Site.Params.highlightjsCDN }}{{ .Site.Params.highlightjsCDN }}{{ else }}{{ "https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/highlight.min.js" }}{{ end}}"></script>
+
+<!--Hugo doesn't like SRI for highlightjs: integrity="sha256-+drbZCPWcVz0Wo0d8P8eD49H5xzTu68R7h7W5trZRk8=" crossorigin="anonymous"-->
+
+{{ if .Site.Params.highlightjsExtraLanguages }}
+{{ if .Site.Params.CDNJS }}
+  {{ range .Site.Params.highlightjsExtraLanguages }}
+    <script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release/build/languages/{{ . }}.min.js"></script>
+  {{ end }}
+{{- else -}}
+  {{ range .Site.Params.highlightjsExtraLanguages }}
+    <script src="{{ "/js/3p/hljs/{{ . }}.min.js" | relURL }}" /></script>
+  {{ end }}
+{{ end }}
+
+{{ end }}
+
+{{ partial "highlight.html" . }}
+{{ end }}
+
+{{ if .Site.Params.CDNJS }}
+  <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.0.0-rc.1/dist/html2canvas.min.js" integrity="sha256-uacRffSSMP9qpvNWhVmYLykBv9YKMA1d/VSIN1AmfyQ=" crossorigin="anonymous"></script>
+{{- else -}}
+  <script src="{{ "/js/3p/html2canvas.min@1.0.0-rc.1.js" | relURL }}"></script>
+{{ end }}
+  <script src="{{ "/js/post.js" | relURL }}" defer></script>
+{{ end }}

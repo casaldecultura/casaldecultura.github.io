@@ -1,0 +1,67 @@
+[home]
+other = "Home"
+
+[backToHome]
+other = "Back to home"
+
+[flip]
+other = "About"
+
+[archives]
+other = "Archives"
+
+[allTags]
+other = "Tags"
+
+[tag]
+one = "1 tag"
+other = "{{ .Count }} tags"
+
+[allCategories]
+other = "Categories"
+
+[category]
+one = "1 category"
+other = "{{ .Count }} categories"
+
+[article]
+one = "1 article"
+other = "{{ .Count }} articles"
+
+[group]
+one = "1 group"
+other = "{{ .Count }} groups"
+
+[socialLinks]
+other = "Social Links"
+
+[minuteRead]
+one = " minute read"
+other = " minutes read"
+
+[updateAt]
+other = "Last updated"
+
+[noTag]
+other = "No Tags"
+
+[prevPage]
+other = "Previous page"
+
+[nextPage]
+other = "Next page"
+
+[saveAsImage]
+other = "Save as image"
+
+[search]
+other = "Search"
+
+[rss]
+other = "Subscribe!"
+
+[switchTheme]
+other = "Theme"
+
+[pageNotFound]
+other = "Error - page not found"

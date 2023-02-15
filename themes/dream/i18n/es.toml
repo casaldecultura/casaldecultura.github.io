@@ -1,0 +1,67 @@
+[home]
+other = "Inicio"
+
+[backToHome]
+other = "Volver a inicio"
+
+[flip]
+other = "Quienes somos"
+
+[archives]
+other = "Archivos"
+
+[allTags]
+other = "Etiquetas"
+
+[tag]
+one = "1 etiqueta"
+other = "{{ .Count }} etiquetas"
+
+[allCategories]
+other = "Categorías"
+
+[category]
+one = "1 categoría"
+other = "{{ .Count }} categorías"
+
+[article]
+one = "1 artículo"
+other = "{{ .Count }} artículos"
+
+[group]
+one = "1 grupo"
+other = "{{ .Count }} grupos"
+
+[socialLinks]
+other = "Enlaces sociales"
+
+[minuteRead]
+one = " minuto de lectura"
+other = " minutos de lectura"
+
+[updateAt]
+other = "Actualizado en"
+
+[noTag]
+other = "Sin etiquetas"
+
+[prevPage]
+other = "Página anterior"
+
+[nextPage]
+other = "Página siguiente"
+
+[saveAsImage]
+other = "Guardar como imagen"
+
+[search]
+other = "Buscar"
+
+[rss]
+other = "Suscríbete!"
+
+[switchTheme]
+other = "Tema"
+
+[pageNotFound]
+other = "Error - página no encontrada"

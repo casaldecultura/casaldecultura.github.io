@@ -1,0 +1,66 @@
+[home]
+other = "ホーム"
+
+[backToHome]
+other = "戻るホーム"
+
+[flip]
+other = "フリップ"
+
+[archives]
+other = "アーカイブ"
+
+[allTags]
+other = "タグ一覧"
+
+[tag]
+one = "1 タグ"
+other = "{{ .Count }} タグ"
+
+[allCategories]
+other = "カテゴリー一覧"
+
+[category]
+one = "1 カテゴリー"
+other = "{{ .Count }} カテゴリー"
+
+[article]
+one = "1 記事"
+other = "{{ .Count }} 記事"
+
+[group]
+one = "1 グループ"
+other = "{{ .Count }} グループ"
+
+[socialLinks]
+other = "SNS"
+
+[minuteRead]
+other = " 分で読めます"
+
+[updateAt]
+other = "更新日時"
+
+[noTag]
+other = "タグ未設定"
+
+[prevPage]
+other = "前へ"
+
+[nextPage]
+other = "次へ"
+
+[saveAsImage]
+other = "画像として保存"
+
+[search]
+other = "検索し"
+
+[rss]
+other = "購読!"
+
+[switchTheme]
+other = "テーマ"
+
+[pageNotFound]
+other = "エラー - ページが見つかりません"

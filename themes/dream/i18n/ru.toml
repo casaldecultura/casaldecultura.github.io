@@ -1,0 +1,75 @@
+[home]
+other = "Главная"
+
+[backToHome]
+other = "На главную"
+
+[flip]
+other = "о нас"
+
+[archives]
+other = "Архивы"
+
+[allTags]
+other = "Теги"
+
+[tag]
+one = "1 тег"
+few = "{{ .Count }} тега"
+many = "{{ .Count }} тегов"
+other = "{{ .Count }} тегов"
+
+[allCategories]
+other = "Категории"
+
+[category]
+one = "1 категория"
+few = "{{ .Count }} категории"
+many = "{{ .Count }} категорий"
+other = "{{ .Count }} категорий"
+
+[article]
+one = "1 статья"
+few = "{{ .Count }} статьи"
+many = "{{ .Count }} статей"
+other = "{{ .Count }} статей"
+
+[group]
+one = "1 группа"
+other = "{{ .Count }} группы"
+
+[socialLinks]
+other = "Социальные сети"
+
+[minuteRead]
+one = " минута чтения"
+few = " минуты чтения"
+many = " минут чтения"
+other = " минут чтения"
+
+[updateAt]
+other = "Обновлено"
+
+[noTag]
+other = "Нет тегов"
+
+[prevPage]
+other = "Предыдущая"
+
+[nextPage]
+other = "Следующая"
+
+[saveAsImage]
+other = "Сохранить как изображение"
+
+[search]
+other = "Поиск"
+
+[rss]
+other = "Подпишитесь!"
+
+[switchTheme]
+other = "Тема"
+
+[pageNotFound]
+other = "Ошибка - страница не найдена"

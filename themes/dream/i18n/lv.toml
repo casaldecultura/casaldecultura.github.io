@@ -1,0 +1,67 @@
+[home]
+other = "Mājas"
+
+[backToHome]
+other = "Atpakaļ uz sākumlapu"
+
+[flip]
+other = "Par mums"
+
+[archives]
+other = "Arhīvs"
+
+[allTags]
+other = "Tagi"
+
+[tag]
+one = "1 tagu"
+other = "{{ .Count }} tagi"
+
+[allCategories]
+other = "Kategorijas"
+
+[category]
+one = "1 kategorija"
+other = "{{ .Count }} kategorijas"
+
+[article]
+one = "1 raksts"
+other = "{{ .Count }} raksti"
+
+[group]
+one = "1 grupa"
+other = "{{ .Count }} grupas"
+
+[socialLinks]
+other = "Saites sociālajos tīklos"
+
+[minuteRead]
+one = " minūte lasīta"
+other = " minūtes lasīts"
+
+[updateAt]
+other = "Atjaunināts plkst"
+
+[noTag]
+other = "Nav tagu"
+
+[prevPage]
+other = "Iepriekšējā lapa"
+
+[nextPage]
+other = "Nākamā lapaspuse"
+
+[saveAsImage]
+other = "Saglabāt kā attēlu"
+
+[search]
+other = "Meklēt"
+
+[rss]
+other = "Abonēt!"
+
+[switchTheme]
+other = "Tēma"
+
+[pageNotFound]
+other = "Kļūda - lapa nav atrasta"
