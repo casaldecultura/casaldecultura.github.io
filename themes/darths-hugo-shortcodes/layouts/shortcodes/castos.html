@@ -1,0 +1,162 @@
+<!-- 
+{{/* 
+    src:
+	https://castos.com/podcast/realism-in-audio-fiction/
+	https://wordpress.org/plugins/seriously-simple-podcasting/
+	
+	Castos are a podcast provider that makes the Seriously Simple Podcasting plugin for Wordpress; they are also automatically included in Turnkey Linux Wordpress sites. Thought it only appropriate they should have a Hugo embed, too.
+	
+	icons are downloaded from:
+	https://castos.com/wp-content/plugins/seriously-simple-podcasting/assets/css/images/player/images/icon-volume-on.svg
+	
+    Usage: 
+    {{< castos id="727145223" image="/img/fallback/resizeallimages.png" >}}
+    
+*/}}
+-->
+
+Share >> embed gives us this shit:
+
+<blockquote class="wp-embedded-content" data-secret="JJFfuFppp5"><a href="https://castos.com/podcast/realism-in-audio-fiction/">Realism in Audio Fiction</a></blockquote><iframe sandbox="allow-scripts" security="restricted" src="https://castos.com/podcast/realism-in-audio-fiction/embed/#?secret=JJFfuFppp5" width="500" height="350" title="“Realism in Audio Fiction” — Castos" data-secret="JJFfuFppp5" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" class="wp-embedded-content"></iframe><script>/*! This file is auto-generated */!function(c,l){"use strict";var e=!1,o=!1;if(l.querySelector)if(c.addEventListener)e=!0;if(c.wp=c.wp||{},c.wp.receiveEmbedMessage);else if(c.wp.receiveEmbedMessage=function(e){var t=e.data;if(!t);else if(!(t.secret||t.message||t.value));else if(/[^a-zA-Z0-9]/.test(t.secret));else{for(var r,s,a,i=l.querySelectorAll('iframe[data-secret="'+t.secret+'"]'),n=l.querySelectorAll('blockquote[data-secret="'+t.secret+'"]'),o=0;o<n.length;o++)n[o].style.display="none";for(o=0;o<i.length;o++)if(r=i[o],e.source!==r.contentWindow);else{if(r.removeAttribute("style"),"height"===t.message){if(1e3<(s=parseInt(t.value,10)))s=1e3;else if(~~s<200)s=200;r.height=s}if("link"===t.message)if(s=l.createElement("a"),a=l.createElement("a"),s.href=r.getAttribute("src"),a.href=t.value,a.host===s.host)if(l.activeElement===r)c.top.location.href=t.value}}},e)c.addEventListener("message",c.wp.receiveEmbedMessage,!1),l.addEventListener("DOMContentLoaded",t,!1),c.addEventListener("load",t,!1);function t(){if(o);else{o=!0;for(var e,t,r,s=-1!==navigator.appVersion.indexOf("MSIE 10"),a=!!navigator.userAgent.match(/Trident.*rv:11\./),i=l.querySelectorAll("iframe.wp-embedded-content"),n=0;n<i.length;n++){if(!(r=(t=i[n]).getAttribute("data-secret")))r=Math.random().toString(36).substr(2,10),t.src+="#?secret="+r,t.setAttribute("data-secret",r);if(s||a)(e=t.cloneNode(!0)).removeAttribute("security"),t.parentNode.replaceChild(e,t);t.contentWindow.postMessage({message:"ready",secret:r},"*")}}}}(window,document);</script>
+
+The actual embed player is this:
+
+<div id="445089699" class="castos-player dark-mode" data-episode="19001" data-player_id="445089699">
+	<div class="player">
+		<div class="player__main">
+			<div class="player__artwork player__artwork-19001">
+				<img decoding="async" src="https://castos.com/wp-content/uploads/2022/08/Audience-Episode-Cover-Mr.-King-2-150x150.png" alt="Audience" title="Audience">
+			</div>
+			<div class="player__body">
+				<div class="currently-playing">
+					<div class="show player__podcast-title">
+						Audience					</div>
+					<div class="episode-title player__episode-title">Realism in Audio Fiction</div>
+				</div>
+				<div class="play-progress">
+					<div class="play-pause-controls">
+						<button title="Play" class="play-btn">
+							<span class="screen-reader-text">Play Episode</span>
+						</button>
+						<button title="Pause" class="pause-btn hide">
+							<span class="screen-reader-text">Pause Episode</span>
+						</button>
+						<img decoding="async" src="https://castos.com/wp-content/plugins/seriously-simple-podcasting/assets/css/images/player/images/icon-loader.svg" class="ssp-loader hide">
+					</div>
+					<div flashstopped_p="true">
+						<audio preload="none" class="clip clip-19001" flashstopped="true" id="dummyid75">
+							<source src="https://castos.com/podcast-player/19001/realism-in-audio-fiction.mp3">
+						</audio>
+						<div class="ssp-progress" role="progressbar" title="Seek">
+							<span class="progress__filled"></span>
+						</div>
+						<div class="ssp-playback playback">
+							<div class="playback__controls">
+								<button class="player-btn__volume" title="Mute/Unmute">
+									<span class="screen-reader-text">Mute/Unmute Episode</span>
+								</button>
+								<button data-skip="-10" class="player-btn__rwd" title="Rewind 10 seconds">
+								<span class="screen-reader-text">Rewind 10 Seconds</span>
+								</button>
+								<button data-speed="1" class="player-btn__speed" title="Playback Speed">1x</button>
+								<button data-skip="30" class="player-btn__fwd" title="Fast Forward 30 seconds">
+									<span class="screen-reader-text">Fast Forward 30 seconds</span>
+								</button>
+							</div>
+							<div class="playback__timers">
+								<time class="ssp-timer">00:00</time>
+								<span>/</span>
+								<!-- We need actual duration here from the server -->
+								<time class="ssp-duration"></time>
+							</div>
+						</div>
+					</div>
+				</div>
+								<nav class="player-panels-nav">
+											<button class="subscribe-btn" id="subscribe-btn-19001" title="Subscribe">Subscribe</button>
+																<button class="share-btn" id="share-btn-19001" title="Share">Share</button>
+									</nav>
+							</div>
+		</div>
+	</div>
+		<div class="player-panels player-panels-19001">
+				<div class="subscribe player-panel subscribe-19001">
+			<div class="close-btn close-btn-19001">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="panel__inner">
+				<div class="subscribe-icons">
+																		<a href="https://podcasts.apple.com/us/podcast/audience/id1491047450" target="_blank" rel="noopener noreferrer" class="apple_podcasts" title="Subscribe on  Apple Podcasts">
+								<span></span>
+								Apple Podcasts							</a>
+																								<a href="https://podcasts.google.com/?feed=aHR0cHM6Ly9jYXN0b3MuY29tL2ZlZWQvcG9kY2FzdC9hdWRpZW5jZQ&amp;ved=0CBoQ27cFahcKEwjIwOLdpOrpAhUAAAAAHQAAAAAQBQ" target="_blank" rel="noopener noreferrer" class="google_podcasts" title="Subscribe on  Google Podcasts">
+								<span></span>
+								Google Podcasts							</a>
+																								<a href="https://overcast.fm/itunes1491047450" target="_blank" rel="noopener noreferrer" class="overcast" title="Subscribe on  Overcast">
+								<span></span>
+								Overcast							</a>
+																								<a href="https://pca.st/ts2essmo" target="_blank" rel="noopener noreferrer" class="pocketcasts" title="Subscribe on  PocketCasts">
+								<span></span>
+								PocketCasts							</a>
+																								<a href="https://open.spotify.com/show/5AXqxL2GkMYaYiFXKIYJId" target="_blank" rel="noopener noreferrer" class="spotify" title="Subscribe on  Spotify">
+								<span></span>
+								Spotify							</a>
+																								<a href="https://www.stitcher.com/s?fid=490178&amp;refid=stpr" target="_blank" rel="noopener noreferrer" class="stitcher" title="Subscribe on  Stitcher">
+								<span></span>
+								Stitcher							</a>
+															</div>
+				<div class="player-panel-row" area-label="RSS Feed URL">
+					<div class="title">
+						RSS Feed					</div>
+					<div>
+						<input value="https://castos.com/feed/podcast/audience" class="input-rss input-rss-19001" title="RSS Feed URL" readonly="">
+					</div>
+					<button class="copy-rss copy-rss-19001" title="Copy RSS Feed URL"></button>
+				</div>
+			</div>
+		</div>
+						<div class="share share-19001 player-panel">
+			<div class="close-btn close-btn-19001">
+				<span></span>
+				<span></span>
+			</div>
+			<div class="player-panel-row">
+				<div class="title">
+					Share				</div>
+				<div class="icons-holder">
+					<a href="https://www.facebook.com/sharer/sharer.php?u=https://castos.com/podcast/realism-in-audio-fiction/&amp;t=Realism in Audio Fiction" target="_blank" rel="noopener noreferrer" class="share-icon facebook" title="Share on Facebook">
+						<span></span>
+					</a>
+					<a href="https://twitter.com/intent/tweet?text=https://castos.com/podcast/realism-in-audio-fiction/&amp;url=Realism in Audio Fiction" target="_blank" rel="noopener noreferrer" class="share-icon twitter" title="Share on Twitter">
+						<span></span>
+					</a>
+					<a href="https://castos.com/podcast-player/19001/realism-in-audio-fiction.mp3" target="_blank" rel="noopener noreferrer" class="share-icon download" title="Download" download="">
+						<span></span>
+					</a>
+				</div>
+			</div>
+			<div class="player-panel-row">
+				<div class="title">
+					Link				</div>
+				<div>
+					<input value="https://castos.com/podcast/realism-in-audio-fiction/" class="input-link input-link-19001" title="Episode URL" readonly="">
+				</div>
+				<button class="copy-link copy-link-19001" title="Copy Episode URL" readonly=""></button>
+			</div>
+			<div class="player-panel-row">
+				<div class="title">
+					Embed				</div>
+				<div style="height: 10px;">
+					<input type="text" value="<blockquote class=&quot;wp-embedded-content&quot; data-secret=&quot;6QUHKR5sGX&quot;><a href=&quot;https://castos.com/podcast/realism-in-audio-fiction/&quot;>Realism in Audio Fiction</a></blockquote><iframe sandbox=&quot;allow-scripts&quot; security=&quot;restricted&quot; src=&quot;https://castos.com/podcast/realism-in-audio-fiction/embed/#?secret=6QUHKR5sGX&quot; width=&quot;500&quot; height=&quot;350&quot; title=&quot;“Realism in Audio Fiction” — Castos&quot; data-secret=&quot;6QUHKR5sGX&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; scrolling=&quot;no&quot; class=&quot;wp-embedded-content&quot;></iframe><script>
+/*! This file is auto-generated */
+!function(c,l){&quot;use strict&quot;;var e=!1,o=!1;if(l.querySelector)if(c.addEventListener)e=!0;if(c.wp=c.wp||{},c.wp.receiveEmbedMessage);else if(c.wp.receiveEmbedMessage=function(e){var t=e.data;if(!t);else if(!(t.secret||t.message||t.value));else if(/[^a-zA-Z0-9]/.test(t.secret));else{for(var r,s,a,i=l.querySelectorAll('iframe[data-secret=&quot;'+t.secret+'&quot;]'),n=l.querySelectorAll('blockquote[data-secret=&quot;'+t.secret+'&quot;]'),o=0;o<n.length;o++)n[o].style.display=&quot;none&quot;;for(o=0;o<i.length;o++)if(r=i[o],e.source!==r.contentWindow);else{if(r.removeAttribute(&quot;style&quot;),&quot;height&quot;===t.message){if(1e3<(s=parseInt(t.value,10)))s=1e3;else if(~~s<200)s=200;r.height=s}if(&quot;link&quot;===t.message)if(s=l.createElement(&quot;a&quot;),a=l.createElement(&quot;a&quot;),s.href=r.getAttribute(&quot;src&quot;),a.href=t.value,a.host===s.host)if(l.activeElement===r)c.top.location.href=t.value}}},e)c.addEventListener(&quot;message&quot;,c.wp.receiveEmbedMessage,!1),l.addEventListener(&quot;DOMContentLoaded&quot;,t,!1),c.addEventListener(&quot;load&quot;,t,!1);function t(){if(o);else{o=!0;for(var e,t,r,s=-1!==navigator.appVersion.indexOf(&quot;MSIE 10&quot;),a=!!navigator.userAgent.match(/Trident.*rv:11\./),i=l.querySelectorAll(&quot;iframe.wp-embedded-content&quot;),n=0;n<i.length;n++){if(!(r=(t=i[n]).getAttribute(&quot;data-secret&quot;)))r=Math.random().toString(36).substr(2,10),t.src+=&quot;#?secret=&quot;+r,t.setAttribute(&quot;data-secret&quot;,r);if(s||a)(e=t.cloneNode(!0)).removeAttribute(&quot;security&quot;),t.parentNode.replaceChild(e,t);t.contentWindow.postMessage({message:&quot;ready&quot;,secret:r},&quot;*&quot;)}}}}(window,document);
+</script>
+" title="Embed Code" class="input-embed input-embed-19001" readonly="">
+				</div>
+				<button class="copy-embed copy-embed-19001" title="Copy Embed Code"></button>
+			</div>
+		</div>
+			</div>
+	
+	</div>

@@ -1,0 +1,37 @@
+<!-- Embeddable torrent-stats info
+http://torrent-stats.info/index.php
+
+As used on famous pirate website https://fitgirl-repacks.site/ to display torrent statistics.
+
+Usage:
+(1) Create the torrent stat image on the TSI website (sign-in is optional, required if you want colours other than coffee)
+
+(2) Complete the captcha and upload your torrent file. 
+
+(3) Insert the following between standard Hugo code brackets:
+
+torrent-stats 4ddd/1810aa7ea
+or
+torrent-stats image="4ddd/1810aa7ea"
+
+-->
+
+{{ if .IsNamedParams }}
+
+<div class="download torrent-stats" style="text-align: center;">
+<img src="http://torrent-stats.info/{{ .Get "image" }}.png" />
+</div>
+
+{{ else }}
+
+<div class="download torrent-stats" style="text-align: center;">
+<img src="http://torrent-stats.info/{{ .Get 0 }}.png" />
+</div>
+
+{{ end}}
+
+{{ if .Site.Params.debug }}
+	<script>
+		console.log("Loaded external image from torrent-stats.info. Please seed!");
+	</script>
+{{ end }}

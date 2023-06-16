@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 740 740">
+  <path d="M160 58H58v152h212V58H160z" fill="#dedede"/>
+  <path d="M210 640H110v-60H58V210h152v270h60v60h210v-60h60V210h150v370h-50v60H540v50H210v-50z" fill="red"/>
+  <path d="M0 0v640h58v50h102v50h420v-50h110v-50h50V0H430v270h50v160h-50v50H310v-50h-40V270h50V0H0zm58 58h212v152h-60v270h60v60h210v-60h60V210h-60V58h210v522h-50v60H540v50H210v-50H110v-60H58V58z" fill="#010000"/>
+  <path d="M580 58H480v152h210V58H580z" fill="#dedede"/>
+  <path d="M580 58H480v152h210V58H580z" fill="#dedede"/>
+</svg>

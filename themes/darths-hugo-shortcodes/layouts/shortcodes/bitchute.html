@@ -1,0 +1,32 @@
+<!-- Embed Bitchute video
+	https://bitchute.helpjuice.com/content/how-to-embed-a-video-on-your-site
+	https://truthseekersunited.com/how-to-embed-a-bitchute-video-into-wordpress/
+
+	Youtube is trigger-happy with bans and copyright strikes; it's always worth having a backup, even if it does seem to attract weird and wonderful channels.
+	Width 640 instead of 100% seems to work better.
+
+	usage:
+	bitchute video="MKfoi5Prpe0i"
+	or 
+	bitchute MKfoi5Prpe0i
+-->
+
+{{ if .IsNamedParams }}
+
+<div class="video bitchute" style="text-align: center;">
+<iframe src="https://www.bitchute.com/embed/{{ .Get "video" }}/" width="640" height="360"></iframe>
+</div>
+
+{{ else }}
+
+<div class="video bitchute" style="text-align: center;">
+<iframe src="https://www.bitchute.com/embed/{{ .Get 0 }}/" width="640" height="360"></iframe>
+</div>
+
+{{ end }}
+
+{{ if .Site.Params.debug }}
+	<script>
+		console.log("Loaded external video from Bitchute.");
+	</script>
+{{ end }}
