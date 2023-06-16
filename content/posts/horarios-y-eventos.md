@@ -29,10 +29,18 @@ Puedes visitarnos muchos dias del año; aqui te ayudamos a planificar tu visita.
 
 De martes a viernes:
 
-{{< figure src="/img/manana_bw_compressed.jpg" height="240" >}}
+<!-- raw HTML to place image and align to centre -->
+<div style="text-align:center;">
+<img src="/img/manana_bw_compressed.jpg" height="240" />
+</div>
+
 - Mañanas: de 11 a 13
 
-{{< figure src="/img/tarde_bw_compressed.jpg" height="240" >}}
+<!-- raw HTML to place image and align to centre -->
+<div style="text-align:center;">
+<img src="/img/tarde_bw_compressed.jpg" height="240" />
+</div>
+
 - Tardes:
 	- Invierno: de 16 a 19
 	- Verano: de 17 a 20
@@ -40,4 +48,4 @@ De martes a viernes:
 
 ## Calendario de eventos especiales
 
-{{< calendar ical="gis.ics" nav=0 view="month" dview=0 >}}
+{{< calendar ical="example.ics" nav=0 view="month" dview=0 >}}

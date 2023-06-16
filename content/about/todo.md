@@ -24,15 +24,6 @@ As such, there are a few incomplete features:
 - Backend: Migrate to page bundles? May facilitate image resource management
 	- This would require adaptations to the picture gallery plugin
 	- Consider using Hugo resources for images, too
-	
-## Contact webmaster
-This website is currently managed and programmed by Darren de Lima. 
-
-Este sitio es manegado y programmado por Darren de Lima.
-
-Ce site es administrée et programmée pour Darren de Lima.
-
-- Website: https://robot-one.github.io
-- Email: darren.delima@yahoo.co.uk
-
-
+- Photo captions are in English; possibly more difficult to translate due to **Hugo Easy Gallery** plugin
+- More info needed **About Us**; webmaster lacks information
+- Dedicated **Tourism** page with user reviews etc? Currently located on **About Us**
