@@ -1,12 +1,27 @@
 ---
-author:  "Hugo Authors"
-title:  "Placeholder Text"
-draft: true
+title: Galería
+date: 2023-05-14T16:21:46+01:00
+lastmod: 2023-05-14T16:21:46+01:00
+author: Ensenyat
+avatar: /img/authors/ensenyat.jpg
+# authorlink: https://author.site
+cover: /img/galeria_bw_compressed.jpg
+images:
+  - /img/galeria_bw_compressed.jpg
+# categories:
+#  - category1
+#tags:
+#  - tag1
+#  - tag2
+nolastmod: true
+draft: false
 ---
 
-Hola mundo
+Aqui tiene una pequeña galería de obras de arte y artefactos archeologicos 
 
 <!--more--> 
+
+y mucho mas. Algunas photos hecho por las visitas recientes en el Casal de Cultura
 
 # Heading 1
 
@@ -20,7 +35,7 @@ Hello world, this is an instruction video
 
 {{< calendar ical="gis.ics" nav=0 view="month" dview=0 >}}
 
-
+{{< googlemaps url="https://www.google.com/maps?ll=52.307749,4.883254&amp;z=15&amp;t=m&amp;hl=en-US&amp;gl=NL&amp;mapclient=embed&amp;q=Lien+Gisolflaan+19+1183+WT+Amstelveen" addr0="ZOE-IT" addr1="Lien Gisolflaan 19" addr2="1183 WT Amstelveen" img="/img/map.jpg" >}}
 
 google doctype="forms" url="google.com"
 
