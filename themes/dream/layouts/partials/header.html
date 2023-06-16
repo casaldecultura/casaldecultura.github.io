@@ -1,14 +1,10 @@
 <header class="ui basic very padded segment dream-header">
   {{ if isset .Site.Params "avatar" }}
-	{{ if .Site.Params.roundAvatar }}
-		<div class="ui small circular image">
+	
+		<div class="ui {{ if .Site.Params.sizeAvatar }}{{ .Site.Params.sizeAvatar }}{{- else -}}small{{ end }} {{ if .Site.Params.roundAvatar }}circular{{ end }} image">
 			<img src="{{ .Site.Params.avatar | relURL }}" alt="avatar" />
 		</div>
-	{{- else -}}
-		<div class="ui small image">
-			<img src="{{ .Site.Params.avatar | relURL }}" alt="avatar" />
-		</div>
-	{{ end }}
+
   {{ end }}
 
   <div class="content">
@@ -25,30 +21,31 @@
       </span>
     </h1>
 
-{{ if not .Site.Params.topTags }}
-    <article class="ui horizontal list">
-      {{ if gt (len (where .Site.RegularPages "Section" "==" "posts")) 0 }}
-      <a class="item" href="{{ "posts" | relLangURL }}">
-        <i class="archive icon" title="{{ T "archives" }}"></i>
-		{{ if .Site.Params.textButtonsMini }}
-		&nbsp;&nbsp;{{ i18n "archives" }}
+{{ if not .Site.Params.simple }}
+	{{ if not .Site.Params.topTags }}
+		<article class="ui horizontal list">
+		{{ if gt (len (where .Site.RegularPages "Section" "==" "posts")) 0 }}
+		<a class="item" href="{{ "posts" | relLangURL }}">
+			<i class="archive icon" title="{{ T "archives" }}"></i>
+			{{ if .Site.Params.textButtonsMini }}
+			&nbsp;&nbsp;{{ i18n "archives" }}
+			{{ end }}
+		</a>
 		{{ end }}
-      </a>
-      {{ end }}
-      <a class="item" href="{{ "categories" | relLangURL }}">
-        <i class="th list icon" title="{{ T "allCategories" }}"></i>
-		{{ if .Site.Params.textButtonsMini }}
-		&nbsp;&nbsp;{{ i18n "allCategories" }}
-		{{ end }}
-      </a>
-      <a class="item" href="{{ "tags" | relLangURL }}">
-        <i class="tags icon" title="{{ T "allTags" }}"></i>
-		{{ if .Site.Params.textButtonsMini }}
-		&nbsp;&nbsp;{{ i18n "allTags" }}
-		{{ end }}
-      </a>
-    </article>
-{{ end }}
+		<a class="item" href="{{ "categories" | relLangURL }}">
+			<i class="th list icon" title="{{ T "allCategories" }}"></i>
+			{{ if .Site.Params.textButtonsMini }}
+			&nbsp;&nbsp;{{ i18n "allCategories" }}
+			{{ end }}
+		</a>
+		<a class="item" href="{{ "tags" | relLangURL }}">
+			<i class="tags icon" title="{{ T "allTags" }}"></i>
+			{{ if .Site.Params.textButtonsMini }}
+			&nbsp;&nbsp;{{ i18n "allTags" }}
+			{{ end }}
+		</a>
+		</article>
+	{{ end }}
 
     {{ if .Site.Taxonomies.tags }}
     {{ $tags := slice }}
@@ -102,6 +99,7 @@
       </div>
     </div>
     {{ end }}
+{{ end }}
 
     {{ end }}
   </div>
