@@ -1,66 +1,56 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><?xml-stylesheet href="/rss.xsl" type="text/xsl"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Hugo Theme Dream</title>
-    <link>https://example.com/</link>
-    <description>Recent content on Hugo Theme Dream</description>
+    <title>Casal de Cultura</title>
+    <link>https://casaldecultura.github.io/</link>
+    <description>Recent content on Casal de Cultura</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Mon, 11 Mar 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" />
+    <language>es</language>
+    <lastBuildDate>Sun, 14 May 2023 16:21:46 +0100</lastBuildDate><atom:link href="https://casaldecultura.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Markdown Syntax Guide</title>
-      <link>https://example.com/posts/markdown-syntax/</link>
-      <pubDate>Mon, 11 Mar 2019 00:00:00 +0000</pubDate>
+      <title>¿Donde estamos ubicados?</title>
+      <link>https://casaldecultura.github.io/posts/ubicacion/</link>
+      <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://example.com/posts/markdown-syntax/</guid>
-      <description>&lt;p&gt;This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p&gt;</description>
+      <guid>https://casaldecultura.github.io/posts/ubicacion/</guid>
+      <description>&lt;p&gt;En el centro de Sóller, tiene muchas casas viejas. Uno de estas casas intenta preservar la historia de Sóller y cultura Mallorquina en forma de museo. Aqui somos, debajo del sol, rodeado por el Mediterraneo.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Rich Content</title>
-      <link>https://example.com/posts/rich-content/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>¿Quien somos?</title>
+      <link>https://casaldecultura.github.io/posts/quien/</link>
+      <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://example.com/posts/rich-content/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+      <guid>https://casaldecultura.github.io/posts/quien/</guid>
+      <description>&lt;p&gt;Hola, todos. Somos una pequeño museo en Sóller manejado por una familia local.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Rich Content - Offline</title>
-      <link>https://example.com/posts/rich-content-offline/</link>
-      <pubDate>Sun, 10 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Bienvenido a la Casal de Cultura</title>
+      <link>https://casaldecultura.github.io/posts/bienvenido/</link>
+      <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://example.com/posts/rich-content-offline/</guid>
-      <description>&lt;p&gt;Hugo ships with several &lt;a href=&#34;https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes&#34;&gt;Built-in Shortcodes&lt;/a&gt; for rich content, along with a &lt;a href=&#34;https://gohugo.io/about/hugo-and-gdpr/&#34;&gt;Privacy Config&lt;/a&gt; and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.&lt;/p&gt;</description>
+      <guid>https://casaldecultura.github.io/posts/bienvenido/</guid>
+      <description>&lt;p&gt;El museo está ubicado en una casa antigua, &lt;strong&gt;ca&amp;rsquo;n Mo&lt;/strong&gt;, construida el año 1740.&lt;/p&gt;
+&lt;p&gt;Hay una sala de exhibiciones, biblioteca y el museo etnológico que contiene una variación rica de objetos arqueológicos o antiguos juntamente con obras artísticas, muebles y más.&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Placeholder Text</title>
-      <link>https://example.com/posts/placeholder-text/</link>
-      <pubDate>Sat, 09 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Galería</title>
+      <link>https://casaldecultura.github.io/posts/galeria/</link>
+      <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://example.com/posts/placeholder-text/</guid>
-      <description>&lt;p&gt;Lorem est tota propiore conpellat pectoribus de
-pectora summo.&lt;/p&gt;</description>
+      <guid>https://casaldecultura.github.io/posts/galeria/</guid>
+      <description>&lt;p&gt;Aqui tiene una pequeña galería de obras de arte y artefactos archeologicos . . .&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>Emoji Support</title>
-      <link>https://example.com/posts/emoji-support/</link>
-      <pubDate>Tue, 05 Mar 2019 00:00:00 +0000</pubDate>
+      <title>Horarios y Eventos</title>
+      <link>https://casaldecultura.github.io/posts/horarios-y-eventos/</link>
+      <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://example.com/posts/emoji-support/</guid>
-      <description>&lt;p&gt;Emoji can be enabled in a Hugo project in a number of ways.&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://example.com/posts/new/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://example.com/posts/new/</guid>
-      <description>Heading 1 Hello world, this is an instruction video
-Heading 2 Heading 3 bold, google url, italics</description>
+      <guid>https://casaldecultura.github.io/posts/horarios-y-eventos/</guid>
+      <description>&lt;p&gt;Puedes visitarnos muchos dias del año; aqui te ayudamos a planificar tu visita.&lt;/p&gt;</description>
     </item>
     
 	

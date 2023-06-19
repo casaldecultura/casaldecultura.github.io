@@ -2,66 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://example.com/categories/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://casaldecultura.github.io/posts/ubicacion/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/css/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://casaldecultura.github.io/posts/quien/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/html/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://casaldecultura.github.io/posts/bienvenido/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/</loc>
-    <lastmod>2022-03-27T03:45:00+00:00</lastmod>
+    <loc>https://casaldecultura.github.io/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/tags/markdown/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://casaldecultura.github.io/posts/galeria/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/markdown-syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
+    <loc>https://casaldecultura.github.io/posts/horarios-y-eventos/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url><url>
-    <loc>https://example.com/posts/</loc>
-    <lastmod>2022-03-27T03:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/syntax/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/</loc>
-    <lastmod>2022-03-27T03:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/categories/themes/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/themes-guide/</loc>
-    <lastmod>2019-03-11T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/privacy/</loc>
-    <lastmod>2022-03-27T03:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/posts/rich-content/</loc>
-    <lastmod>2019-03-10T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/posts/rich-content-offline/</loc>
-    <lastmod>2022-03-27T03:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/shortcodes/</loc>
-    <lastmod>2022-03-27T03:45:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/posts/placeholder-text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/text/</loc>
-    <lastmod>2019-03-09T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/tags/emoji/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/posts/emoji-support/</loc>
-    <lastmod>2019-03-05T00:00:00+00:00</lastmod>
-  </url><url>
-    <loc>https://example.com/posts/new/</loc>
+    <loc>https://casaldecultura.github.io/posts/</loc>
+    <lastmod>2023-05-14T16:21:46+01:00</lastmod>
   </url>
 </urlset>
