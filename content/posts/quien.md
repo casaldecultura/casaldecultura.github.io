@@ -24,19 +24,19 @@ Hola, todos. Somos una pequeño museo en Sóller manejado por una familia local.
 Un destinación turisitica para cientos de turistas cada año, compartimos los tradiciones mallorquines con los demas. Somos supportado por el **Ajuntament de Sóller**, la familia **Ensenyat**, dezenvolvedor de web **Darren de Lima**, hosting cumplementos de **[Microsoft® GitHub™](https://github.com)** y tu ayuda.
 
 ## Historia del Museo
-Fundado en 1989 por Sr. José Lopez para compartir su colección de juguetes de los años 1930...
+*Más información próximamente...*
 
 ## Dirección
-> Museo del Casal de Cultura
->
-> de Sóller, 
->
-> Carrer de Sa Mar, 13, 07100 Sóller,
->
-> Mallorca
->
-> Illes Balears, España
-
+```
+Museo del Casal de Cultura de Sóller
+13
+Carrer de Sa Mar
+07100 
+Sóller
+Mallorca
+Illes Balears
+España
+```
 
 ## Otros sitios
 <!-- raw HTML to place image and align to centre -->
@@ -45,6 +45,6 @@ Fundado en 1989 por Sr. José Lopez para compartir su colección de juguetes de 
 </div>
 
 Información sobre nosotros en otros sitios de web:
-- [El viejo sito del Casal de Cultura](https://web.archive.org/web/20160828074636/http://sollernet.com/casal/indexes.html) (arquivado en el servicio **Wayback Machine** del **Internet Archive**)
+- [El viejo sito del Casal de Cultura](https://web.archive.org/web/20160828074636/http://sollernet.com/casal/indexes.html) hecho por Jeremy Lynton en 2002 (archivado en el servicio **[Wayback Machine](https://es.wikipedia.org/wiki/Wayback_Machine)** del **[Internet Archive](https://es.wikipedia.org/wiki/Internet_Archive)**)
 - [TripAdvisor](https://www.tripadvisor.es/Attraction_Review-g319794-d11663832-Reviews-Museu_del_Casal_de_Cultura-Soller_Majorca_Balearic_Islands.html)
 - [Otro sitio de web con informacion sobre el Museo del Casal de Cultura](https://ajsoller.net/en/partnerships-companies-equipments-and-facilities/casal-de-cultura-museu-de-soller)

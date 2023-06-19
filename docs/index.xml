@@ -2,54 +2,54 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Casal de Cultura</title>
-    <link>https://webdemosite.github.io/museum/</link>
+    <link>https://casaldecultura.github.io/</link>
     <description>Recent content on Casal de Cultura</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>es</language>
-    <lastBuildDate>Sun, 14 May 2023 16:21:46 +0100</lastBuildDate><atom:link href="https://webdemosite.github.io/museum/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 14 May 2023 16:21:46 +0100</lastBuildDate><atom:link href="https://casaldecultura.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>¿Donde estamos ubicados?</title>
-      <link>https://webdemosite.github.io/museum/posts/ubicacion/</link>
+      <link>https://casaldecultura.github.io/posts/ubicacion/</link>
       <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://webdemosite.github.io/museum/posts/ubicacion/</guid>
+      <guid>https://casaldecultura.github.io/posts/ubicacion/</guid>
       <description>&lt;p&gt;En el centro de Sóller, tiene muchas casas viejas. Uno de estas casas intenta preservar la historia de Sóller y cultura Mallorquina en forma de museo. Aqui somos, debajo del sol, rodeado por el Mediterraneo.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>¿Quien somos?</title>
-      <link>https://webdemosite.github.io/museum/posts/quien/</link>
+      <link>https://casaldecultura.github.io/posts/quien/</link>
       <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://webdemosite.github.io/museum/posts/quien/</guid>
+      <guid>https://casaldecultura.github.io/posts/quien/</guid>
       <description>&lt;p&gt;Hola, todos. Somos una pequeño museo en Sóller manejado por una familia local.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Bienvenido a la Casal de Cultura</title>
-      <link>https://webdemosite.github.io/museum/posts/bienvenido/</link>
+      <link>https://casaldecultura.github.io/posts/bienvenido/</link>
       <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://webdemosite.github.io/museum/posts/bienvenido/</guid>
+      <guid>https://casaldecultura.github.io/posts/bienvenido/</guid>
       <description>&lt;p&gt;El museo está ubicado en una casa antigua, &lt;strong&gt;ca&amp;rsquo;n Mo&lt;/strong&gt;, construida el año 1740.&lt;/p&gt;
 &lt;p&gt;Hay una sala de exhibiciones, biblioteca y el museo etnológico que contiene una variación rica de objetos arqueológicos o antiguos juntamente con obras artísticas, muebles y más.&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Galería</title>
-      <link>https://webdemosite.github.io/museum/posts/galeria/</link>
+      <link>https://casaldecultura.github.io/posts/galeria/</link>
       <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://webdemosite.github.io/museum/posts/galeria/</guid>
+      <guid>https://casaldecultura.github.io/posts/galeria/</guid>
       <description>&lt;p&gt;Aqui tiene una pequeña galería de obras de arte y artefactos archeologicos . . .&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Horarios y Eventos</title>
-      <link>https://webdemosite.github.io/museum/posts/horarios-y-eventos/</link>
+      <link>https://casaldecultura.github.io/posts/horarios-y-eventos/</link>
       <pubDate>Sun, 14 May 2023 16:21:46 +0100</pubDate>
       
-      <guid>https://webdemosite.github.io/museum/posts/horarios-y-eventos/</guid>
+      <guid>https://casaldecultura.github.io/posts/horarios-y-eventos/</guid>
       <description>&lt;p&gt;Puedes visitarnos muchos dias del año; aqui te ayudamos a planificar tu visita.&lt;/p&gt;</description>
     </item>
     
