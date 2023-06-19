@@ -53,7 +53,7 @@ unsafe = true
   # categoriesLimitInHeader = 6 # deprecated
   # headerBottomText = "" # deprecated
 
-  # footerBottomText = ""
+  footerBottomText = "GDPR: Este sitio utiliza Google Analytics. Por favor instale <href=https://ublockorigin.com/>uBlock Origin</href> parar no participar."
 
   rss = false
   # rssHeader = true
