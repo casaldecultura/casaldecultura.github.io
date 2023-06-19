@@ -1,4 +1,5 @@
-baseurl = "https://casaldecultura.github.io"
+baseurl = "https://webdemosite.github.io/museum/"
+# baseurl = "https://casaldecultura.github.io"
 languageCode = "es"
 defaultContentLanguage = "es"
 title = "Casal de Cultura"
