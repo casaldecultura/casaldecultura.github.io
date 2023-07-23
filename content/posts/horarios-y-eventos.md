@@ -23,7 +23,13 @@ Puedes visitarnos muchos dias del año; aqui te ayudamos a planificar tu visita.
 
 ¡Esperamos que vuelves lluego a visitar con tus amigos!
 
-# Entrada Gratis / Free entry / Entrée gratuite
+**Entrada/Entry/Entrée: €5**
+
+> El Museo de Sóller es un organizacion sin ánimo de lucro; cobramos la entrada solo por el mantenimiento.
+> 
+> The Museum is a non-profit organisation; entrance is charged solely for upkeep.
+> 
+> La Musée est une entreprise à but non lucratif; nous facturons l'entrée seulement pour l'entretien du bâtiment, etc.
 
 ## El horario de visita:
 

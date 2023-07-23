@@ -81,7 +81,7 @@ unsafe = true
 
   siteStartYear = 2023
   # Required for "Site last updated" footer
-  commit = "https://github.com/museo/casaldecultura.github.io/commits/"
+  commit = "https://github.com/casaldecultura/casaldecultura.github.io/commits/"
 
   favicon = "/favicons/favicon.ico"
 
