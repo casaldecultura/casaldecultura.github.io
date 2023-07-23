@@ -1,4 +1,4 @@
-baseurl = "https://casaldecultura.github.io"
+baseurl = "https://casaldecultura.com"
 languageCode = "es"
 defaultContentLanguage = "es"
 title = "Casal de Cultura"
@@ -12,7 +12,7 @@ disableKinds = ["taxonomy", "term"]
 
 # copyright = ""
 
-# googleAnalytics = ""
+googleAnalytics = "G-6PW4PE89PX"
 
 # disqusShortname = ""
 
