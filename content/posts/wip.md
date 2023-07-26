@@ -5,9 +5,9 @@ lastmod: 2023-07-23T22:57:13+01:00
 author: Ensenyat
 avatar: /img/authors/ensenyat.jpg
 # authorlink: https://author.site
-cover: /img/cover.jpg
-images:
-  - /img/cover.jpg
+#cover: /img/cover.jpg
+#images:
+#  - /img/cover.jpg
 # nolastmod: true
 draft: false
 ---
